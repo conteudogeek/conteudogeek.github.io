@@ -1,5 +1,6 @@
-$("#menu-btn").click(function() {
+$("#cg-menu-btn").click(function(e) {
   var isOpen = $("#menu").data("isOpen");
+  alert("here");
 
   if (isOpen) {
     $("#menu").slideUp();
@@ -8,4 +9,4 @@ $("#menu-btn").click(function() {
   }
   isOpen = !isOpen;
   $("#menu").data("isOpen", isOpen);
-})
+});

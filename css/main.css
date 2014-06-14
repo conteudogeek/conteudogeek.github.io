@@ -103,7 +103,8 @@ main {
 }
 
 main h2 {
-  color: #333333;
+  color: #336E7B;
+  font-size: 1.3em;
 }
 
 .header a {
@@ -168,7 +169,11 @@ main h2 {
   border: 0;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 650px) {
+  p.meta {
+    display: none;
+  }
+  
   #menu-btn {
     display: inline-block;
   }
