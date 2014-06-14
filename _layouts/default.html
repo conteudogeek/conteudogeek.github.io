@@ -1,29 +1,48 @@
 <!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
-
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' />
     </head>
     <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-        <div class="site">
-          <div class="header">
+        <header class="header">
+          <div class='wrapper'>
             <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
+            <a class="extra" href="/">Contrate-me</a>
+            <a class="extra" href="/">Sobre</a>
+            <a class="extra" href="/"> <i class="fa fa-2x fa-linkedin-square"> </i> </a>
+            <a class="extra" href="/"> <i class="fa fa-2x fa-facebook-square"> </i> </a>
+            <a class="extra" href="/"> <i class="fa fa-2x fa-github-alt"> </i> </a>
+            <a class="extra" href="/"> <i class="fa fa-2x fa-twitter-square"> </i> </a>
+          <div>
+        </header>
 
-          {{ content }}
+        <main>
+          <section class='wrapper'>
+            {{ content }}
+          </section>
+        </main>
 
-          <div class="footer">
+        <footer class="footer">
+          <div class='wrapper'>
             <div class="contact">
               <p>
                 Your Name<br />
@@ -37,8 +56,21 @@
                 <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
               </p>
             </div>
-          </div>
         </div>
 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
     </body>
 </html>
