@@ -58,6 +58,7 @@ a:visited { color: #a0a; }
 .wrapper {
   max-width: 700px;
   margin: 0 auto;
+  padding: 0 0.5em;
 }
 
 header {
@@ -69,9 +70,28 @@ header {
   text-align: left;
 }
 
-header i.fa {
+header .extra i.fa {
   font-size: 1.5em;
   color: #65C6BB;
+}
+
+#menu-btn {
+  display: none;
+  float: right;
+  color: #f0f0f0;
+}
+
+#menu {
+  display: none;
+  font-size: 1.25em;
+  background-color: #67809F;
+}
+
+#menu a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 0.2em;
+  color: #fafafa;
 }
 
 main {
@@ -113,6 +133,10 @@ main h2 {
   border-bottom: 2px solid #36D7B7;
 }
 
+.header a.social:hover {
+  border-bottom: none;
+}
+
 .meta {
   color: #aaa;
 }
@@ -142,6 +166,20 @@ main h2 {
 
 .footer .rss img {
   border: 0;
+}
+
+@media screen and (max-width: 640px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  header {
+    font-size: 1.5em;
+  }
+
+  .extra {
+    display: none;
+  }
 }
 
 /*****************************************************************************/
