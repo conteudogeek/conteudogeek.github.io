@@ -1,6 +1,5 @@
-$("#cg-menu-btn").click(function(e) {
+$("#menu-btn").click(function(e) {
   var isOpen = $("#menu").data("isOpen");
-  alert("here");
 
   if (isOpen) {
     $("#menu").slideUp();
