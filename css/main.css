@@ -177,6 +177,12 @@ main h2 {
 
 .footer .contact a {
   color: #8085C1;
+  text-decoration: none;
+}
+
+.footer .contact a i.fa {
+  font-size: 1.35em;
+  margin-left: 1em;
 }
 
 .footer .rss {

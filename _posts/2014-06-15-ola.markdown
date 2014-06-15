@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Olá!"
+date:   2014-06-15 16:46:00
+author: "Leonel Machava"
+---
+
+Este é o primeiro post deste blog. Neste espaço partilharei vários tópicos sobre tecnologia. A maioria dos artigos estarão relacionados à desenvolvimento de aplicações web, móveis, computação gráfica e jogos.
