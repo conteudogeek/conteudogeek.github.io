@@ -81,17 +81,37 @@ header .extra i.fa {
   color: #f0f0f0;
 }
 
-#menu {
+#menu, #social-menu {
   display: none;
   font-size: 1.25em;
-  background-color: #67809F;
+  background-color: #C5EFF7;
+}
+
+#social-menu a {
+  text-decoration: none;
+  margin-left: 1em;
+}
+
+#social-menu i.fa {
+  color: #fefefe;
+  font-size: 1.5em;
+  color: #336E7B;
 }
 
 #menu a {
   display: block;
   text-decoration: none;
   padding: 0.5em 0.2em;
-  color: #fafafa;
+  color: #1E8BC3;
+}
+
+#menu a.social {
+  display: inline-block;
+}
+
+#menu a.social i.fa {
+  font-size: 1.5em;
+  color: #336E7B;
 }
 
 main {
@@ -169,20 +189,38 @@ main h2 {
   border: 0;
 }
 
-@media screen and (max-width: 650px) {
-  p.meta {
-    display: none;
-  }
-  
-  #menu-btn {
-    display: inline-block;
-  }
+#social-btn {
+  display: none;
+}
 
+@media screen and (max-width: 655px) {
   header {
     font-size: 1.5em;
   }
 
+  #social-btn {
+    display: inline-block;
+  }
+
+  .social {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  p.meta {
+    display: none;
+  }
+
+  #menu-btn {
+    display: inline-block;
+  }
+
   .extra {
+    display: none;
+  }
+
+  #social-btn {
     display: none;
   }
 }
