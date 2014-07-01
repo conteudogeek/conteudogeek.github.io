@@ -1,4 +1,6 @@
 name: CONTEÚDO GEEK
+description: Artigos sobre tecnologia incluindo desenvolvimento de aplicações web, móveis e jogos.
+url: http://www.conteudogeek.com
 markdown: redcarpet
 pygments: true
 gems:
