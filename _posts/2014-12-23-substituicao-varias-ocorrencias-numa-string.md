@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Substituição de várias ocorrências de uma string em JavaScript"
-date:   2014-12-23 13::00
+date:   2014-12-23 13:30:00
 author: "Leonel Machava"
 ---
 
