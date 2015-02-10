@@ -249,9 +249,10 @@ main h2 {
 
 /* standard */
 .post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
+  border-radius: 5px;
+  background-color: #222;
+  padding: 0.6em;
+  overflow-x: auto;
 }
 
 .post ul, .post ol {
@@ -259,12 +260,13 @@ main h2 {
 }
 
 .post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
+  border: 1px solid #ddd;  
+  background-color: transparent;
   padding: 0 .2em;
 }
 
 .post pre code {
+  background-color: #222;
   border: none;
 }
 
